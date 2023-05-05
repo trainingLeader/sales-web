@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <script src="js/jquery-3.6.4.slim.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js" defer></script>
+    <script src="app.js" type = "module" defer></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main-menu></main-menu>
+    <main>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link optCustomers" data-verocultar='["#regCustomer",["#lstCustomer","#searchCustomer"]]' href="#">Registrar cliente</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link optCustomers" data-verocultar='["#lstCustomer",["#regCustomer","#searchCustomer"]]' href="#">Listar Clientes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link optCustomers" data-verocultar='["#searchCustomer",["#lstCustomer","#regCustomer"]]' href="#">Buscar Cliente</a>
+                </li>
+              </ul>
+        </div>
+        <section>
+            <div class="container" id="regCustomer" style="display:none;">
+                <customer-form></customer-form>
+            </div>
+            <div class="container d-none" id="lstCustomer" style="display:none;">
+                <h1>Listado clientes</h1>
+            </div>
+            <div class="container d-none" id="searchCustomer" style="display:none;">
+                <h1>Buscador</h1>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
