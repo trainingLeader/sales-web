@@ -1,3 +1,40 @@
 {
-    "customers" : []
+  "customers": [
+    {
+      "createdAt": "2023-05-05",
+      "nombres": "Carlos",
+      "apellidos": "Perez",
+      "email": "fgh",
+      "nroMovil": "245",
+      "fechaNacimiento": "2023-05-10",
+      "id": 1
+    },
+    {
+      "createdAt": "2023-05-05",
+      "nombres": "Carlos",
+      "apellidos": "Perez",
+      "email": "fgh",
+      "nroMovil": "245",
+      "fechaNacimiento": "2023-05-10",
+      "id": 2
+    },
+    {
+      "createdAt": "2023-05-05",
+      "nombres": "angel",
+      "apellidos": "sdfgf",
+      "email": "dgfh",
+      "nroMovil": "sdfg",
+      "fechaNacimiento": "2023-05-05",
+      "id": 3
+    },
+    {
+      "createdAt": "2023-05-06",
+      "nombres": "gfhgh",
+      "apellidos": "fdgf",
+      "email": "sfdf",
+      "nroMovil": "dsfdsfds",
+      "fechaNacimiento": "2023-05-05",
+      "id": 4
+    }
+  ]
 }

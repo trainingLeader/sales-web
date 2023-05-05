@@ -1,7 +1,10 @@
+import {getCustomers} from '../../Apis/customer-api.js';
+import {postCustomer} from '../../Apis/customer-api.js';
 export class CustomerForm extends HTMLElement{
     constructor(){
         super();
         this.render();
+        this.saveData();
     }
     render(){
         this.innerHTML = /* html */ `
@@ -55,5 +58,14 @@ export class CustomerForm extends HTMLElement{
         </div>
         `
     }
+    saveData = () =>{
+        const frmRegistro = document.querySelector('#frmData');
+        document.querySelector('#btnGuardar').addEventListener("click", (e) =>{
+            const datos = Object.fromEntries(new FormData(frmRegistro).entries());
+            postCustomer(datos);
+        })
+    }
+
+
 }
 customElements.define("customer-form",CustomerForm);

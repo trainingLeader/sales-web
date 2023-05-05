@@ -1,4 +1,4 @@
-
+const URL_API = "http://localhost:3000";
  function tabMenuPage (){ 
     document.querySelectorAll(".optCustomers").forEach((val, id) => {
         val.addEventListener("click", (e)=>{
@@ -14,6 +14,7 @@
         })
     })
 }
+
 export {
     tabMenuPage
 };
